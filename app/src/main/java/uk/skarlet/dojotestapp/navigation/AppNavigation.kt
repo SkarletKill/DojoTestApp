@@ -9,18 +9,14 @@ import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.navigation3.ui.NavDisplay
 import kotlinx.serialization.Serializable
 import uk.skarlet.dojotestapp.feature.main.MainRoute
-import uk.skarlet.dojotestapp.feature.transactions.presentation.TransactionsRoute
 
 /** One serializable key per destination. Add a key + an `entry<Key>` per new screen. */
 @Serializable
 data object MainKey : NavKey
 
-@Serializable
-data object TransactionsKey : NavKey
-
 @Composable
 fun AppNavigation() {
-    val backStack = rememberNavBackStack(TransactionsKey)
+    val backStack = rememberNavBackStack(MainKey)
 
     NavDisplay(
         backStack = backStack,
@@ -32,7 +28,6 @@ fun AppNavigation() {
         ),
         entryProvider = entryProvider {
             entry<MainKey> { MainRoute() }
-            entry<TransactionsKey> { TransactionsRoute() }
         },
     )
 }

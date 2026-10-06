@@ -1,25 +1,3 @@
 <resources>
     <string name="app_name">DojoTestApp</string>
-
-    <!-- Transactions -->
-    <string name="transactions_title">Today\'s takings</string>
-    <string name="transactions_summary_label">Takings</string>
-    <plurals name="transactions_completed_count">
-        <item quantity="one">%d payment</item>
-        <item quantity="other">%d payments</item>
-    </plurals>
-    <plurals name="transactions_declined_count">
-        <item quantity="one">%d declined</item>
-        <item quantity="other">%d declined</item>
-    </plurals>
-    <string name="transactions_recent_header">Recent transactions</string>
-    <string name="transactions_status_refunded">Refunded</string>
-    <string name="transactions_status_declined">Declined</string>
-    <string name="transactions_empty_title">No payments yet today</string>
-    <string name="transactions_empty_body">Payments you take will show up here as they happen.</string>
-
-    <!-- Errors -->
-    <string name="error_no_connection">You\'re offline. Check your connection and try again.</string>
-    <string name="error_generic">Something went wrong. Please try again.</string>
-    <string name="action_retry">Try again</string>
 </resources>
